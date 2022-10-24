@@ -13,7 +13,7 @@ public interface PhoneService {
 
     Phone save(Phone phone);
 
-    String update(Long id, Phone phone);
+    Phone update(Long id, Phone phone);
 
     String delete(Long id);
 

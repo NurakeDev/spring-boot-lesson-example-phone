@@ -1,4 +1,4 @@
-package nurakedevgroup.com.springbootlessonexamplephone.service.Impl;
+package nurakedevgroup.com.springbootlessonexamplephone.controller;
 
 import nurakedevgroup.com.springbootlessonexamplephone.entity.Phone;
 import nurakedevgroup.com.springbootlessonexamplephone.service.PhoneService;
@@ -30,7 +30,7 @@ public class PhoneController {
     }
 
     @PutMapping(name = "update", path = "/{id}/update") //update
-    public String update(@PathVariable Long id, @RequestBody Phone phone){
+    public Phone update(@PathVariable Long id, @RequestBody Phone phone){
         return service.update(id, phone);
     }
 
